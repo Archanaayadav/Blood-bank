@@ -4,9 +4,116 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Usha Blood Bank</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <title>Lifecare Blood Bank</title>
 </head>
-<body>
+<body id="home">
+  <nav id="navbar">
+    <div class="container">
+      
+        <h1 class="name">
+          <span class="primary"><i class="fas fa-heartbeat"></i> LifeCare</span> Blood Bank
+        </h1>
+<!-- 
+      <div class="reg-in">
+        <a href="">Register Here</a>
+        <a href="">Login</a>
+      </div> -->
+
+      <div class="reg-in">
+        <ul>
+          <li>Register here <i class="fas fa-angle-down"></i>
+            <ul>
+              <li><a href="">Hospitals</a></li>
+              <li><a href="">Receivers</a></li>
+            </ul>
+          </li>
+          <li><a href="">Login</a></li>
+        </ul>
+      </div>
+
+      <div class="other">
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="">Availability</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
   
+  <header id="showcase">
+    <div class="showcase-content">  
+      <h1 class="heading">Welcome to LifeCare Blood Bank</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis alias. Mollitia quibusdam officia atque iusto? Non at consequuntur et.</p>
+        <div>
+          <a href="" class="btn btn-dark">Hospitals <i class="far fa-hospital"></i></a>
+          <a href="" class="btn">Receivers <i class="fas fa-user-friends"></i></a>
+       </div>
+    </div>
+  </header>
+
+  <section id="about" class="py">
+    <div class="container">
+      <h2>About Us</h2>
+      <div class="about-container">
+        <article class="card">
+          <img src="https://img1.wsimg.com/isteam/stock/25818" alt="">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, aspernatur.</p>
+        </article>
+        <article class="card">
+          <img src="https://img1.wsimg.com/isteam/stock/wNDKkzB" alt="">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, aspernatur.</p>
+        </article>
+      </div>      
+    </div>
+  </section>
+
+
+  <footer id="main-footer" class="py">
+    <div class="container footer-container">
+      <div>
+        <h1 class="name">
+          <span class="primary"><i class="fas fa-heartbeat"></i> LifeCare</span> Blood Bank
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit deserunt assumenda enim non? Ratione ipsum voluptates fuga eos earum vitae.</p>
+      </div>
+      <div>
+        <h3>Email Queries</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <form>
+          <input type="email" placeholder="Enter Email" class="register">
+          <input type="submit" value="Subscribe" class="btn btn-secondary register">
+        </form>
+      </div>
+      <div>
+        <h3>Site Links</h3>
+        <ul class="list">
+          <li><a href="#">Help & Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Register Yourself</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nesciunt!</p>
+        <a href="" class="btn btn-primary register">Register Now</a>
+      </div>
+      <div>
+        <p>
+          Copyright &copy; 2021, All Rights Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+ 
 </body>
 </html>
