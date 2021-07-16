@@ -76,9 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary{background: #a42222;}
-.btn-secondary{background: #497b0f;;}
+.btn-secondary{background: #65ab15;;}
 
 .py { padding: 2rem 0 }
+.p-2{ padding: 1.5rem; }
 
 .card {
   /* background: #fff; */
@@ -96,7 +97,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .list li a:hover {
-  color: var(--primary-color) !important;
+  color: #a42222 !important;
+}
+
+.bg-primary{
+  background: #ccc;
+  color: #333;
 }
 
 /* Navbar */
@@ -135,6 +141,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #navbar .other li:first-child a{
   margin-left: 2rem;
+}
+
+#navbar .other ul li a.current{
+  background: #dd5b5b;
+  color: black;
+  border-radius: 5px;
 }
 
 #navbar .reg-in ul{
@@ -253,6 +265,82 @@ h1, h2, h3, h4, h5, h6 {
 
 #about .about-container h3{
   padding: 0.7rem 0;
+}
+
+
+/* Login section */
+#login{
+  background: #333 url('./images/bg-2.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 50vh;
+}
+
+#login .login-details{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0,0,0,0.4);
+}
+
+#login .login-details h1{
+  font-size: 30px;
+  color: aliceblue;
+}
+
+#login .login-details p{
+  font-size: 20px;
+  padding-bottom: 0.7rem;
+}
+
+#login .login-details p > a{
+  color: coral;
+}
+
+#login .form-group{
+  margin-bottom: 20px;
+}
+
+#login input{
+  width: 100%;
+  padding: 10px; 
+}
+
+#login label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+#login button{
+  margin-top: 0.4rem;
+  color: #fff;
+}
+
+/* Contact */
+#contact{
+  display: flex;
+  height: 100vh;
+  background: rgb(233, 228, 228);
+}
+
+#contact .contact-details, #contact #map{
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#contact .contact-details h1{
+  font-size: 35px;
+  color: rgb(56, 56, 74);
+  border-bottom: #444 solid 1px;
+}
+#contact .contact-details h2{
+  margin: 2rem 0;
+  color: brown;
 }
 
 /* Footer */

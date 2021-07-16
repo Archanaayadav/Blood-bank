@@ -29,69 +29,47 @@
               <li><a href="">Receivers</a></li>
             </ul>
           </li>
-          <li><a href="#login">Login</a></li>
+          <li><a href="index.html">Login</a></li>
         </ul>
       </div>
 
       <div class="other">
         <ul>
-          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="">Availability</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="current" href="contact.html">Contact</a></li>
         </ul>
       </div>
 
     </div>
   </nav>
-  
-  <header id="showcase">
-    <div class="showcase-content">  
-      <h1 class="heading">Welcome to LifeCare Blood Bank</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nobis alias. Mollitia quibusdam officia atque iusto? Non at consequuntur et.</p>
-        <div>
-          <a href="" class="btn btn-dark">Hospitals <i class="far fa-hospital"></i></a>
-          <a href="" class="btn">Receivers <i class="fas fa-user-friends"></i></a>
-       </div>
-    </div>
-  </header>
-
-  <section id="about" class="py">
+ 
+  <!-- Contact Section -->
+  <section id="contact">
     <div class="container">
-      <h2>About Us</h2>
-      <div class="about-container">
-        <article class="card">
-          <img src="https://img1.wsimg.com/isteam/stock/25818" alt="">
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, aspernatur.</p>
-        </article>
-        <article class="card">
-          <img src="https://img1.wsimg.com/isteam/stock/wNDKkzB" alt="">
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, aspernatur.</p>
-        </article>
-      </div>      
-    </div>
-  </section>
-
-  <section id="login">
-    <div class="login-details">
-        <h1>Login Here</h1>
-        <p> <a href="">Register</a> yourself before you try to login.</p>
-        <form action="">
-          <div class="form-group">
-            <label for="id">Registered Id</label>
-            <input type="text" name="id" id="id">
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-          </div>
-          <button type="submit" class="btn btn-secondary">Login</button>
-        </form>
+      <div class="contact-details">
+        <h1>Contact Us</h1>
+        <h2> Feel free to call us!</h2>
+        <p>Please contact us directly with any questions, comments, or scheduling inquiries you may have </p>
+        <a href="#" class="btn btn-dark"><i class="fab fa-whatsapp"></i> Emergency Contact</a>
+        <h2>LifeCare Blood Bank</h2>
+        <p>Gurgaon - Sohna Road, South City II, Sector 47, Gurugram, Haryana, India</p>
+        <br>
+        <div>
+          <p>Contact No: 89xxxxxx01, 0124-xxxxx01</p>
+          <p>Email: lifecare24@gmail.com</p>
+        </div>
+        <h2>Hours</h2>
+        <div>
+          <p>Monday - Friday: 8AM–8PM</p>
+          <p>Saturday - Sunday: 8AM–6PM</p>
+          <br>
+          <p>Emergency Service: 24/7</p>
+        </div>
       </div>
     </div>
-
-    </div>
+    
+    <div id="map"></div>
   </section>
 
   <footer id="main-footer" class="py">
@@ -136,5 +114,11 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <script src="main.js"></script>
+
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMf-C30FjqZlftFQ1F1qRhwHojH1X9c3U&callback=initMap&libraries=&v=weekly"
+  async></script>
+ 
+
 </body>
 </html>
