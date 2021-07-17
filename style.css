@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #navbar .other ul li a{
   padding: 0.5rem;
-  /* margin: 0 0.5rem; */
+  margin-right: 0.2rem;
 }
 
 #navbar .other ul li a:hover{
@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(243, 221, 224);
   display: inline-block;
   /* position: relative; */
-
+  /* z-index: 2; */
 }
 
 #navbar .reg-in ul li a{
@@ -174,15 +174,17 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
 }
 
-#navbar .reg-in ul li a:hover{
-  background: rgb(177, 194, 216);
-  color: rgb(54, 22, 159);
-  border-radius: 5px;
-}
 
 #navbar .reg-in ul li ul{
   display: none;
   /* position: absolute; */
+}
+
+
+#navbar .reg-in .click a:hover{
+  background: rgb(177, 194, 216);
+  color: rgb(54, 22, 159);
+  border-radius: 5px;
 }
 
 #navbar .reg-in ul li ul li a{
@@ -190,10 +192,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 #navbar .reg-in ul li:hover ul{
   display: block;
-  margin-top: 1.3rem;
+  /* margin-top: 0.5rem; */
   /* left: 0; */
   width: 120px;
   position: absolute;
+  padding-top: 0.55rem;
+  
 }
 
 #navbar .reg-in ul li:hover ul li{
@@ -207,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #navbar .reg-in ul li:hover ul li:hover{
   background: rgb(162, 155, 155);
-  color: inherit;
+  /* color: inherit; */
 }
 
 /* 
@@ -307,6 +311,13 @@ h1, h2, h3, h4, h5, h6 {
 #login input{
   width: 100%;
   padding: 10px; 
+  background: transparent;
+  color: #fff;
+  border: #ccc solid 1px;
+}
+
+#login input::placeholder{
+  color: #ccc
 }
 
 #login label{
@@ -317,6 +328,69 @@ h1, h2, h3, h4, h5, h6 {
 #login button{
   margin-top: 0.4rem;
   color: #fff;
+  border: #333 solid 1px;
+  background: coral;
+}
+
+#login button:hover{
+  opacity: 0.8;
+}
+
+/* Available page */
+#available{
+  background: #e4e3e3;
+}
+
+#available .available-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+#available .available-content h2{
+  color: #333;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: rgb(155, 153, 153) solid 1px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.info{
+  width: 100%;
+  border-spacing: 0;
+}
+
+.info tbody{
+  color: #fff;
+}
+
+.itemcontainer{
+  background: rgb(71, 69, 69);
+}
+
+td{
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px 0;
+}
+
+.itemHeader {
+  font-size: 20px;
+  margin: 20px 0;
+  padding: 10px 0;
+  color: rgb(101, 97, 97);
+}
+
+.info tbody tr td a{
+  background: rgb(255, 179, 80);
+  padding: 0.3rem;
+}
+
+.info tbody tr td a:hover{
+  background: cornflowerblue;
+  color: lemonchiffon;
+  transition: all 0.5s ease-in-out;
 }
 
 /* Contact */
@@ -341,6 +415,91 @@ h1, h2, h3, h4, h5, h6 {
 #contact .contact-details h2{
   margin: 2rem 0;
   color: brown;
+}
+
+/* Registration of Hospitals */
+/* #hosp-reg{
+  background: cornflowerblue;
+} */
+
+.container-form{
+  max-width: 40%;
+  margin: 50px auto;
+  padding: 20px;
+  border: #333 solid 2px;
+  background: #ccc;
+}
+
+.form-wrap{
+  /* background: #fff; */
+  padding: 15px 25px ;
+}
+
+.form-wrap h1, .form-wrap h3{
+  text-align: center;
+}
+
+.form-wrap h1{
+  color: darkblue;
+  font-size: 30px;
+}
+.form-wrap .form-group{
+  margin-top: 15px;
+}
+
+.form-wrap .form-group label{
+  display: block;
+}
+
+.form-wrap .form-group input, .form-wrap .form-group select{
+  width: 100%;
+  padding: 10px;
+  border: rgb(83, 82, 82) 2px solid;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.form-wrap .btn{
+  background: #3751a0;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form-wrap .btn:hover{
+  background: #617ad5;
+}
+
+.form-wrap .bottom-text{
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+
+.bottom{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.bottom a{
+  color: blue;
+}
+
+.bottom a:hover{
+  color: red;
+}
+
+.container-form .bottom-text a{
+  color: red;
+}
+.container-form .bottom-text a:hover{
+  color: blue;
 }
 
 /* Footer */

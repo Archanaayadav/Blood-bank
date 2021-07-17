@@ -23,7 +23,7 @@ function initMap() {
 
 
 //Smooth Scrolling (Jquery)
-$('#navbar a').on('click', function(event) {
+$('#navbar a, .list li a').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
 

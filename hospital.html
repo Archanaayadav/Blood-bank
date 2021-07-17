@@ -37,40 +37,47 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="available.html">Availability</a></li>
-          <li><a class="current" href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
     </div>
   </nav>
- 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-details">
-        <h1>Contact Us</h1>
-        <h2> Feel free to call us!</h2>
-        <p>Please contact us directly with any questions, comments, or scheduling inquiries you may have </p>
-        <a href="#" class="btn btn-dark"><i class="fab fa-whatsapp"></i> Emergency Contact</a>
-        <h2>LifeCare Blood Bank</h2>
-        <p>Gurgaon - Sohna Road, South City II, Sector 47, Gurugram, Haryana, India</p>
-        <br>
-        <div>
-          <p>Contact No: 89xxxxxx01, 0124-xxxxx01</p>
-          <p>Email: lifecare24@gmail.com</p>
-        </div>
-        <h2>Hours</h2>
-        <div>
-          <p>Monday - Friday: 8AM–8PM</p>
-          <p>Saturday - Sunday: 8AM–6PM</p>
-          <br>
-          <p>Emergency Service: 24/7</p>
-        </div>
+
+  <section id="hosp-reg">
+    <div class="container-form">
+      <div class="form-wrap">
+        <h1>Register Here</h1>
+        <h3>It's free and only takes a mintue!</h3>
+        <form action="">
+          <div class="form-group">
+            <label for="first-name">Hospital Name</label>
+            <input type="text", id="first-name" name="firstname">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email", id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password", id="password" name="password">
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password", id="password2" name="password2">
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+          <p class="bottom-text">By clicking Sign Up botton, you agree to our <a href="#">T&C</a> 
+            and <a href="#">privacy policy</a>.</p>
+        </form>
       </div>
-    </div>
-    
-    <div id="map"></div>
+      <div class="bottom">
+        <p>Already Registered? <a href="index.html">Login Here</a></p>
+      </div>
+    </div>  
   </section>
+  
+
 
   <footer id="main-footer" class="py">
     <div class="container footer-container">
@@ -93,7 +100,7 @@
         <ul class="list">
           <li><a href="#">Help & Support</a></li>
           <li><a href="#">Privacy Policy</a></li>
-          <li><a href="index.html">About Us</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -114,11 +121,5 @@
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <script src="main.js"></script>
-
-  <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMf-C30FjqZlftFQ1F1qRhwHojH1X9c3U&callback=initMap&libraries=&v=weekly"
-  async></script>
- 
-
 </body>
 </html>
